@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_Lucot.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="headerTitle">
+                Laboratory Activity #14 - DOM Tree Structure - Accessing Elements with JavaScript
+            </h1>
+        </header>
+
+        <main>
+            <article>
+                <h2>Task #1: Accessing Elements by ID</h2>
+                <p>Create an HTML document with a <p> element having the id myElementId and with
+                    text content "Initial Text". Also, create a separate external JavaScript file that selects the
+                    element by its id and gets its textContent. Use console.log to log the textContent of the
+                    selected element.</p>
+                <p id="myElementId">Initial Text</p>
+                <input type="button" value="Run Task #1" onclick="task1()">
+            </article>
+            <article>
+                <h2>Task #2: Accessing Elements by Tag Name</h2>
+                <p>Create an HTML document with three &lt;span&gt; elements with texts as follows:<br>
+                    <span>Element 1</span><br>
+                    <span>Element 2</span><br>
+                    <span>Element 3</span><br>
+                    Then, create an external JavaScript file that selects all of the &lt;span&gt; elements.</p>
+                <input type="button" value="Run Task #2" onclick="task2()">
+            </article>
+            <article>
+                <h2>Task #3: Navigating to Child Nodes</h2>
+                <p>Create an HTML document with a parent tag &lt;div&gt; and give it an id of “parent”. Within
+                    the &lt;div&gt; tag, create multiple &lt;p&gt; elements with texts as follows:
+                    <div id="parent">
+                        <p>Paragraph 1</p>
+                        <p>Paragraph 2</p>
+                        <p>Paragraph 3</p>
+                    </div>
+                    Then, create an external JavaScript file that selects the &lt;div&gt; tag.</p>
+                <input type="button" value="Run Task #3" onclick="task3()">
+            </article>
+            <article>
+                <h2>Task #4: Navigating to Parent Node</h2>
+                <p>Create an HTML document with a parent element &lt;div&gt; containing a child
+                    element &lt;span&gt; with the text "Child Element." Then, create an external JavaScript file to
+                    select the child element and target its parent element.</p>
+                    <div>
+                        <span id="child">Child Element</span>
+                    </div>
+                <input type="button" value="Run Task #4" onclick="task4()">
+            </article>
+            <article>
+                <h2>Task #5: Accessing Children by Tag Name</h2>
+                <p>Create an HTML document with a parent tag &lt;ul&gt; containing three child tags &lt;li&gt; with
+                    the following text content:.</p>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                <p>Then, create an external JavaScript file that selects the parent tag &lt;ul&gt;.</p>
+                <input type="button" value="Run Task #5" onclick="task5()">
+            </article>
+            <article>
+                <h2>Task #6: Accessing Child Elements</h2>
+                <p>Create an HTML document with a parent element (&lt;div&gt; with id “parent”) containing
+                    three child elements &#40;like &lt;p&gt; with text contents:</p>
+                    <div id="parent">
+                        <p>Paragraph 1</p>
+                        <p>Paragraph 2</p>
+                        <p>Paragraph 3</p>
+                    </div>
+                    <p>&#41;. <br>
+                        Write an external JavaScript file that selects the parent element and navigate to the first
+                        child, next sibling of the first child and the last child of that parent element. Finally, log
+                        the text contents of each child in the console.</p>
+                <input type="button" value="Run Task #6" onclick="task6()">
+            </article>
+        </main>
+    </div>
+
+    <script src="script_Lucot.js"></script>
+</body>
+</html>
